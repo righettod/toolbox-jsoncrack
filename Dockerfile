@@ -4,7 +4,7 @@ FROM alpine:latest
 RUN apk update
 RUN apk add git nodejs npm
 RUN npm install --ignore-scripts --global pnpm
-RUN git clone --depth 1 git clone https://github.com/AykutSarac/jsoncrack.com.git /jsoncrack
+RUN git clone --depth 1 https://github.com/AykutSarac/jsoncrack.com.git /jsoncrack
 RUN addgroup -S appgroup
 RUN adduser -S runner -G appgroup
 RUN chown -R runner:appgroup /jsoncrack
