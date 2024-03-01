@@ -12,4 +12,4 @@ USER runner
 RUN cd /jsoncrack && pnpm install
 EXPOSE 3000
 WORKDIR /jsoncrack
-CMD ["pnpm dev"]
+CMD ["/usr/local/bin/pnpm", "dev"]
