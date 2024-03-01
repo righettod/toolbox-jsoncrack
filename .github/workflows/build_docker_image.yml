@@ -15,10 +15,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-        with:
-          repository: AykutSarac/jsoncrack.com
       - name: List content from checkout
-        run: wget -q -O DockerfileFixed https://raw.githubusercontent.com/righettod/toolbox-jsoncrack/main/DockerfileFixed ; ls -rtl
+        run: ls -rtl
       - name: Log in to the Container registry
         uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
         with:
@@ -34,7 +32,6 @@ jobs:
         uses: docker/build-push-action@f2a1d5e99d037542a71f64918e516c093c6f3fc4
         with:
           context: .
-          file: DockerfileFixed
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
