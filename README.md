@@ -1,11 +1,11 @@
 # 💻 JSON Crack toolbox
 
-![Build and deploy the toolbox image](https://github.com/righettod/toolbox-regex/actions/workflows/build_docker_image.yml/badge.svg?branch=main) ![MadeWithDocker](https://img.shields.io/static/v1?label=Made%20with&message=Docker&color=blue&?style=for-the-badge&logo=docker) ![AutomatedWith](https://img.shields.io/static/v1?label=Automated%20with&message=GitHub%20Actions&color=blue&?style=for-the-badge&logo=github)
+![Build and deploy the toolbox image](https://github.com/righettod/toolbox-jsoncrack/actions/workflows/build_docker_image.yml/badge.svg?branch=main) ![MadeWithDocker](https://img.shields.io/static/v1?label=Made%20with&message=Docker&color=blue&?style=for-the-badge&logo=docker) ![AutomatedWith](https://img.shields.io/static/v1?label=Automated%20with&message=GitHub%20Actions&color=blue&?style=for-the-badge&logo=github)
 
 
 ## 🎯 Description
 
-The goal of this repository is to provide an up to date docker image of the [JSOn Crack](https://github.com/AykutSarac/jsoncrack.com) tool.
+The goal of this repository is to provide an up to date docker image of the [JSON Crack](https://github.com/AykutSarac/jsoncrack.com) tool.
 
 ## 📦 Build
 
