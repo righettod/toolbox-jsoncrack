@@ -2,7 +2,8 @@
 # See issue https://github.com/AykutSarac/jsoncrack.com/issues/375
 FROM alpine:latest
 RUN apk update
-RUN apk add git pnpm
+RUN apk add git nodejs
+RUN npm install --ignore-scripts --global pnpm
 RUN git clone --depth 1 git clone https://github.com/AykutSarac/jsoncrack.com.git /jsoncrack
 RUN addgroup -S appgroup
 RUN adduser -S runner -G appgroup
