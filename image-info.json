@@ -1,1 +1,94 @@
-{}
+[
+    {
+        "Id": "sha256:3516ab7c75a2646c86b40312e7e7f010f5138a8d1f71c413f05ab67340b0aec7",
+        "RepoTags": [
+            "ghcr.io/righettod/toolbox-jsoncrack:main"
+        ],
+        "RepoDigests": [
+            "ghcr.io/righettod/toolbox-jsoncrack@sha256:76b656266eef0b659394de8ea9fa829d4bd839ef5e39116d6c16ffa1c92ce7a9"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2025-02-22T15:56:05.59249799Z",
+        "DockerVersion": "",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "101",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "8080/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NGINX_VERSION=1.26.3",
+                "NJS_VERSION=0.8.9",
+                "NJS_RELEASE=1~bookworm",
+                "PKG_RELEASE=1~bookworm",
+                "DYNPKG_RELEASE=2~bookworm"
+            ],
+            "Cmd": [
+                "nginx",
+                "-g",
+                "daemon off;"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "/app",
+            "Entrypoint": [
+                "/docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>",
+                "org.opencontainers.image.created": "2025-02-22T15:53:31.097Z",
+                "org.opencontainers.image.description": "Docker image to have a local instance of JSON Crack.",
+                "org.opencontainers.image.licenses": "GPL-3.0",
+                "org.opencontainers.image.revision": "00f49e2588f6533aac3ab59123be61dbf54278e9",
+                "org.opencontainers.image.source": "https://github.com/righettod/toolbox-jsoncrack",
+                "org.opencontainers.image.title": "toolbox-jsoncrack",
+                "org.opencontainers.image.url": "https://github.com/righettod/toolbox-jsoncrack",
+                "org.opencontainers.image.version": "main"
+            },
+            "StopSignal": "SIGQUIT"
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 253145812,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/p6k7k06mnuplkkhnqbnalsxvk/diff:/var/lib/docker/overlay2/yf8n49yd4nle510wwy4296rw3/diff:/var/lib/docker/overlay2/2ff0a0761d324f4d073bd088051a800c95c092b08bb900d4997bb2d20a9d1da8/diff:/var/lib/docker/overlay2/d5cfa3bd9876f3bee6e1cdf993a8f396e6ef890114186e3eb3c53649dad4042f/diff:/var/lib/docker/overlay2/4928506b791d024fe4f64d0b0241b807cb0bd087f5279b5c9fb2f92673d0aafb/diff:/var/lib/docker/overlay2/cfd660a154542beb74a61a957b28fcb0b35346588c1f142a3a140816f12da9c5/diff:/var/lib/docker/overlay2/1540f2066d31f7acab438fd8b0a35c03df2289805694d1c6448cdcef785d129b/diff:/var/lib/docker/overlay2/27a6d881de78f82abb888a35b35056b2ab88139aef7d9c55d46b88420abd1b4e/diff:/var/lib/docker/overlay2/2f0d4b3eb1f7c12a1cda0962b8209f464d6fd44bf6d40d9be2fc9de78b5af110/diff:/var/lib/docker/overlay2/a0d7fb39a3b3dd6fafe2292c3a51252f49855568a1dba4ec1e221520f84ee16b/diff",
+                "MergedDir": "/var/lib/docker/overlay2/u58bdlricx7tmq0znfgpusrqi/merged",
+                "UpperDir": "/var/lib/docker/overlay2/u58bdlricx7tmq0znfgpusrqi/diff",
+                "WorkDir": "/var/lib/docker/overlay2/u58bdlricx7tmq0znfgpusrqi/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:7914c8f600f532b7adbd0b003888e3aa921687d62dbe2f1f829d0ab6234a158a",
+                "sha256:b027a7ea9107520b367ac8cad090dd3e74a87e2e655a6210718d668347d8e59b",
+                "sha256:4d6bb975cd81cc2e72d1c7f0b7b97b6f1bf389f3e7b8c5972dafda3954fc507a",
+                "sha256:03c6161c676b634b7d7cf8c3e32550e165c376b8462772d401b79be367bd7311",
+                "sha256:7793ad8cdd2ca314a1c53bf6fd483fa6c885575fa53be28fe4fa9cfbaf84a64e",
+                "sha256:a451786507e3cd4b59a1f82c9cf92d70738f3dd8240e39fd76a1c3da2a9a10a1",
+                "sha256:55cc6481aa407cba899d752a9184c209cfbd90fb9c623219c36891ab3922c169",
+                "sha256:35894e28223470b0416e1d704dba60e3aeaf83724cff65a288e777153666c3de",
+                "sha256:53f79d15c6154cd99d40b82297d9eb4eb8512d36c20897d7feab3cbb164cb737",
+                "sha256:39bf0bf0d3ead747aa6e34d6ce1fdda77bd0cc88df750f5e7e119c1f2216a0ae",
+                "sha256:25edcd9f119b4b9f56f50b293c9ce9156297c93bb85802151856a924e0059c7e"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2025-02-22T15:56:06.022907157Z"
+        }
+    }
+]
