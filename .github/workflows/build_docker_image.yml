@@ -17,23 +17,24 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: List content from checkout
-        run: chmod +x build.sh; bash build.sh
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v3
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3       
-      - name: Login to GitHub Container Registry
+        run: chmod +x build.sh; bash build.sh      
+      - name: Log in to the Container registry
         uses: docker/login-action@v3
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Extract metadata (tags, labels) for Docker
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
           context: jsoncrack
-          platforms: ${{ env.PLATFORM }}
           push: true
-          tags: |
-            ${{ env.IMAGE_NAME }}:latest
-            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+      - name: Update image information file
+        run: docker image inspect "${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main" > image-info.json; git config --global user.email "gha@github.com"; git config --global user.name "GHActionBot"; git commit -m "Sync image information file" image-info.json; git push
