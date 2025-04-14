@@ -7,6 +7,7 @@ env:
   REGISTRY: ghcr.io
   IMAGE_NAME: "righettod/toolbox-jsoncrack"
   PLATFORM: "linux/amd64"
+permissions: read-all   
 jobs:
   build-and-push-image:
     runs-on: ubuntu-latest
