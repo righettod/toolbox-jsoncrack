@@ -16,7 +16,7 @@ jobs:
       packages: write
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
       - name: Patch the dockerfile
         run: chmod +x patch.sh; bash patch.sh
       - name: Log in to the Container registry
