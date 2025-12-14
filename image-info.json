@@ -1,16 +1,16 @@
 [
     {
-        "Id": "sha256:11c0d8c1788fc87a360c37b7d081371bddbaf40fcbbca1f9e0153b97fc13585e",
+        "Id": "sha256:4d7f3e9508f5cf97a209214b2af208013b1be40e8e4a1c606cc67f7ccc771f74",
         "RepoTags": [
             "ghcr.io/righettod/toolbox-jsoncrack:main",
             "ghcr.io/righettod/toolbox-jsoncrack:nightly"
         ],
         "RepoDigests": [
-            "ghcr.io/righettod/toolbox-jsoncrack@sha256:fc4a27d025b937d57bc4c50ce6a86ea3e941b545296b58421627c3aa13d497a2"
+            "ghcr.io/righettod/toolbox-jsoncrack@sha256:88d652769ed6e3cd8217fad6f720c2f9c19676ebb4a6620a278696e4d0851044"
         ],
         "Parent": "",
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2025-12-07T00:40:18.721905758Z",
+        "Created": "2025-12-14T00:40:37.260076059Z",
         "DockerVersion": "",
         "Author": "",
         "Config": {
@@ -49,10 +49,10 @@
             "OnBuild": null,
             "Labels": {
                 "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>",
-                "org.opencontainers.image.created": "2025-12-07T00:38:13.527Z",
+                "org.opencontainers.image.created": "2025-12-14T00:38:14.790Z",
                 "org.opencontainers.image.description": "Docker image to have a local instance of JSON Crack.",
                 "org.opencontainers.image.licenses": "GPL-3.0",
-                "org.opencontainers.image.revision": "31eee0351252372e56fd6bebf46cf5baf656e894",
+                "org.opencontainers.image.revision": "590eea5207352a3a29d16632fde740fc90bf3036",
                 "org.opencontainers.image.source": "https://github.com/righettod/toolbox-jsoncrack",
                 "org.opencontainers.image.title": "toolbox-jsoncrack",
                 "org.opencontainers.image.url": "https://github.com/righettod/toolbox-jsoncrack",
@@ -62,13 +62,13 @@
         },
         "Architecture": "amd64",
         "Os": "linux",
-        "Size": 255111195,
+        "Size": 249275363,
         "GraphDriver": {
             "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/p38dbqq2stlf1tkl2xy0w7awb/diff:/var/lib/docker/overlay2/nxntmgfqj1rv3vq87ttdomyzk/diff:/var/lib/docker/overlay2/1107772e3149a7abe4eb616167a5b3ea5b01e5eb609dddda74fbdb7baffa9910/diff:/var/lib/docker/overlay2/2abd05935dd7ee9c088bb940ca8a07d1327ccde70b8eba89621b61ca4e668b72/diff:/var/lib/docker/overlay2/a62067f563a9e356d552ceeecea38a1733878eee50e0cc784065bbfa6313c854/diff:/var/lib/docker/overlay2/4a159e7ae4daef3d06a67932d1b03d457509a2b00fd95867ec8ccc6c37dc21ec/diff:/var/lib/docker/overlay2/5eac2227fb0cd586a3564563e01b3a91972537a494bbd9a8c24662c06bf0785b/diff:/var/lib/docker/overlay2/1b27c6628739de71a7bb3b501eebd64b0cb6d73102061008f466c6b1f17b8fd0/diff:/var/lib/docker/overlay2/92d2a04bfbbf56542fa9cc17df32a20b62002bcaa1f9bf2cc98809b156ad378f/diff:/var/lib/docker/overlay2/ff9b3ba793539ac0b5d7f4ca562b572d97f62d7d22b15fbf7395eabc081fb272/diff",
-                "MergedDir": "/var/lib/docker/overlay2/09zagcsmm33jcrijmxdb5whps/merged",
-                "UpperDir": "/var/lib/docker/overlay2/09zagcsmm33jcrijmxdb5whps/diff",
-                "WorkDir": "/var/lib/docker/overlay2/09zagcsmm33jcrijmxdb5whps/work"
+                "LowerDir": "/var/lib/docker/overlay2/pazeh0onz5c71a057ybidt1ch/diff:/var/lib/docker/overlay2/w8bdavvkibsmzfsdgxfbkdpzg/diff:/var/lib/docker/overlay2/10bbaddbbe26b863d53ad5e39d6de021ca843cf5e4b14e1173f85f92fa451877/diff:/var/lib/docker/overlay2/6bbc21879b951049075ce2565c2ae72d00a73b2124370eeba1166dd51bea75f1/diff:/var/lib/docker/overlay2/ec339acb722c1187a4c5e32f80c4b1be507f89fae938c06a0c9b75cb92143265/diff:/var/lib/docker/overlay2/3af36190b9cdceb0e136d298847b4fe1dff041f385baaf914993aa675198f096/diff:/var/lib/docker/overlay2/e77c92ffc37a2e460f4d7dc1b645806bda71c0c090d5d97a56dee28499aaae7a/diff:/var/lib/docker/overlay2/07c527ddbfbe25527940e2597c06dfc41c97046132b8f9a9f3f0ab6bb86b2029/diff:/var/lib/docker/overlay2/ed251d48905f770f73ee2803ae215ca9f9cdaa4466e255884f6ff55fb7ea266d/diff:/var/lib/docker/overlay2/406289019ca2be15edee10c47aebcc914571578a5aef0690f981bccf5b4deff7/diff",
+                "MergedDir": "/var/lib/docker/overlay2/xq69rcuz7k0vv69y5puwiukcx/merged",
+                "UpperDir": "/var/lib/docker/overlay2/xq69rcuz7k0vv69y5puwiukcx/diff",
+                "WorkDir": "/var/lib/docker/overlay2/xq69rcuz7k0vv69y5puwiukcx/work"
             },
             "Name": "overlay2"
         },
@@ -76,20 +76,20 @@
             "Type": "layers",
             "Layers": [
                 "sha256:bd2be69c2f99787cb0e82abb70c4f40195074360a991a329f9a0908d8d1f28e7",
-                "sha256:05cff0c4097054dca671251edaab6763a130be51afd3986b8eca78758ea1ed41",
-                "sha256:e302041b5233615777a6e200610caa1b05d37f4ca7f4c9bad25c7c607685823e",
-                "sha256:a3242259423dcc10f3971df187194f399e87c520864e1090cf2046a09fd24be7",
-                "sha256:58198948a7f9b7cd2bf578842c7ffad0641b0d40983d81ceef31a4f0d031c384",
-                "sha256:1a651efae3b87271c3f3836dbcfbfe3062ee3b104ed2a098e572686903da75ec",
-                "sha256:f1d94cec7957ef8b9e45c80b6c7108564c68ac429240d52132dbffbebaa52048",
-                "sha256:95851e911e8d474486f1f1094b67df5b062457698fdaf3537b141fb1ab58d771",
-                "sha256:4ed573c0e2fd5a3273344a00f34dcb0210cb36e2a7a7adb7c944ebf7d6fd0f53",
-                "sha256:e4164f6ddcbd6736a4d72db1c73a41e3b6c4cee5714e10e4b7f1f91782bf0ea6",
-                "sha256:fd2576a69ade9a161e5feab2e54031d35b74ea3ff4ea859e2fdf9fbaa0081f3c"
+                "sha256:94a600296787fd46e660c8f153e9d9586cbb0c9e3b8c69b81fe5c1b936eae846",
+                "sha256:3ef5a64e3e72735baa8ab5e3f6d8f6b8b33b4a38c36101ad0646672551be2b56",
+                "sha256:c89e5eeb5b7b272cedc5c7156911fb40f6eef3c8f0488d77bdb50a110b049aab",
+                "sha256:b8e4dd457b5fe15eb6eeea493bf2cdac7a71b8abf2b38f872aab1481f17510e5",
+                "sha256:677e2faf6fb0adc0cb40daeaf247776420280a41d80cdbf97924cbd621384c0b",
+                "sha256:a6fc618b5e99af9074fc21ba0def08cfda29fac6bdcb43aca7a2bc72031a7711",
+                "sha256:2bff1b4b7924142245cf2a77fb08c989ecf07d586a129a8656f7112e66cb3b49",
+                "sha256:c1d643ed637946bfb26099a1fe631ffd36c5e644422fcc1bf098d9ba1e6369f1",
+                "sha256:919e8561173e6bbd78efe3654010839592efcced099d5b213c9e8f7d957eba75",
+                "sha256:66cbe310e604dd8541ba32f6058c847458291cc97098c8c7cc1d30043d7b3416"
             ]
         },
         "Metadata": {
-            "LastTagTime": "2025-12-07T00:40:19.044213946Z"
+            "LastTagTime": "2025-12-14T00:40:38.014579386Z"
         }
     }
 ]
