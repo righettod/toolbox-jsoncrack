@@ -1,31 +1,20 @@
 [
     {
-        "Id": "sha256:11fbeeb6f343928025b4f5a2d1e3748f999e06a5fbfef324f7ce4150761e72bb",
+        "Id": "sha256:5f9bb2441fcec9feb6b1af29d0eb2dda51fec4f5f799474e7ff6dcdc2dcc15f8",
         "RepoTags": [
             "ghcr.io/righettod/toolbox-jsoncrack:main",
             "ghcr.io/righettod/toolbox-jsoncrack:nightly"
         ],
         "RepoDigests": [
-            "ghcr.io/righettod/toolbox-jsoncrack@sha256:a0321595be0b42775f8bc4abcdb8bca7a6586b913df084e451d72378027c3188"
+            "ghcr.io/righettod/toolbox-jsoncrack@sha256:5f9bb2441fcec9feb6b1af29d0eb2dda51fec4f5f799474e7ff6dcdc2dcc15f8"
         ],
-        "Parent": "",
         "Comment": "buildkit.dockerfile.v0",
-        "Created": "2026-02-08T00:57:14.536789879Z",
-        "DockerVersion": "",
-        "Author": "",
+        "Created": "2026-02-15T00:49:38.256595196Z",
         "Config": {
-            "Hostname": "",
-            "Domainname": "",
             "User": "101",
-            "AttachStdin": false,
-            "AttachStdout": false,
-            "AttachStderr": false,
             "ExposedPorts": {
                 "8080/tcp": {}
             },
-            "Tty": false,
-            "OpenStdin": false,
-            "StdinOnce": false,
             "Env": [
                 "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
                 "NGINX_VERSION=1.28.2",
@@ -34,62 +23,55 @@
                 "PKG_RELEASE=1~trixie",
                 "DYNPKG_RELEASE=1~trixie"
             ],
+            "Entrypoint": [
+                "/docker-entrypoint.sh"
+            ],
             "Cmd": [
                 "nginx",
                 "-g",
                 "daemon off;"
             ],
-            "ArgsEscaped": true,
-            "Image": "",
-            "Volumes": null,
             "WorkingDir": "/app",
-            "Entrypoint": [
-                "/docker-entrypoint.sh"
-            ],
-            "OnBuild": null,
             "Labels": {
                 "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>",
-                "org.opencontainers.image.created": "2026-02-08T00:55:12.864Z",
+                "org.opencontainers.image.created": "2026-02-15T00:47:22.149Z",
                 "org.opencontainers.image.description": "Docker image to have a local instance of JSON Crack.",
                 "org.opencontainers.image.licenses": "GPL-3.0",
-                "org.opencontainers.image.revision": "22768b942d78b4c5fe290217213170dd64df979a",
+                "org.opencontainers.image.revision": "2fec4aef25e74e7de18fb14f2e640e70474d734c",
                 "org.opencontainers.image.source": "https://github.com/righettod/toolbox-jsoncrack",
                 "org.opencontainers.image.title": "toolbox-jsoncrack",
                 "org.opencontainers.image.url": "https://github.com/righettod/toolbox-jsoncrack",
                 "org.opencontainers.image.version": "nightly"
             },
-            "StopSignal": "SIGQUIT"
+            "StopSignal": "SIGQUIT",
+            "ArgsEscaped": true
         },
         "Architecture": "amd64",
         "Os": "linux",
-        "Size": 223047975,
-        "GraphDriver": {
-            "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/sotveatv4z69se6v5ynu0xii9/diff:/var/lib/docker/overlay2/7sxj0oxp4asoo3fmqoxl46o6r/diff:/var/lib/docker/overlay2/f764d11b9e0a481ea9ebf97e0d3b71e8db6982c483d17dd4ad8f324d027ece8f/diff:/var/lib/docker/overlay2/570674e1e0e7b51e80aca2aa26e2bc8c6ebb19235dc257cf770ac7c165de174b/diff:/var/lib/docker/overlay2/d52858ac5fcffbc5f43b21d003d3127f0e407e271e9670de68122bd9c996977c/diff:/var/lib/docker/overlay2/dd49becc0d425a3bffc6d6f918d4dbb0d4b143f115fd75108f8c542f07d6010e/diff:/var/lib/docker/overlay2/3b7450e51ae500c9e1b8d8fbbaf169279382adda96395d56dcf425d1d03f0f34/diff:/var/lib/docker/overlay2/3e6445663ba420a1e3ad03679a908201a4187925b25d38a0fc2dc0351d921568/diff:/var/lib/docker/overlay2/eab77fc12ed896e8c14ffd44cdb9641614d5f1cae39e612b35b959e4a07638d4/diff:/var/lib/docker/overlay2/0ed2a5ea37429ea4c2199cd0d5e996fd0e033cff42b00d6fa69c70017f661982/diff",
-                "MergedDir": "/var/lib/docker/overlay2/ua9wwllae0zfa7t40yvpg7ifu/merged",
-                "UpperDir": "/var/lib/docker/overlay2/ua9wwllae0zfa7t40yvpg7ifu/diff",
-                "WorkDir": "/var/lib/docker/overlay2/ua9wwllae0zfa7t40yvpg7ifu/work"
-            },
-            "Name": "overlay2"
-        },
+        "Size": 75804189,
         "RootFS": {
             "Type": "layers",
             "Layers": [
                 "sha256:a8ff6f8cbdfd6741c10dd183560df7212db666db046768b0f05bbc3904515f03",
-                "sha256:326de54b0d37b069a623c337c4da03b99038535078bed3e522679a9663148fc6",
-                "sha256:bdd10d588da3147ba675a482299e5c9e69e422de4820bfcfb4c43219336fd364",
-                "sha256:103a48f9b30eb437c94e91a86c70ec37172867a5193675aeb278ee3df595b8de",
-                "sha256:6d597c9b5a65e54ef2055310f9bccbdf0f23e80792b64a22c345fb4058d64fcb",
-                "sha256:5377718c1473311b38c3e3dca04cbc74bb89c16b13bb21b0977a110833b36786",
-                "sha256:fbee99903232bbb10c18ca4dfd77b605b0c8d8a3a342dff2dbeb8f879271fcb8",
-                "sha256:e0dbb1132dd46f5e71632d2a122d19cf7d0143250cbc54e1564c39cde5fc286f",
-                "sha256:5e35fc05b4a65c614915c77b0bd40c258498a37b7a3df40915e8156e0cf41a94",
-                "sha256:4b847bc1d78b934d8c2a599edee558b0f0219e4f8e714b077766b26ca2274fa6",
-                "sha256:1d472f217f61b231f247d851b262bf82a1eb31ed1623ce354e535e6428c6ebd5"
+                "sha256:903c0101573320c5a290b14f3ea0d23808c9c831df5c996c90a2584b67522853",
+                "sha256:862c216b86b19219786a55924fa297222376efe74b8391af51ffab627f0dec95",
+                "sha256:7c712c6f58e08035c7b87daa41cd3812f2e12d07551fdd16c468c30d93f12ae9",
+                "sha256:3fdecd70f488b112b2ca89deaf3b3fcde743e1483699a7ff8192296b818ba43e",
+                "sha256:71b822f41e8f6c0763cb09d1c0593fe24433da403ff8e3a24f32781113674500",
+                "sha256:a134ce4da99a4aa2bc4e875f9d339c040518aea7d4ac0de1ca6799d256b124c2",
+                "sha256:b1b7ca5cee37505e6b8bff1285a8808dbbdb8b45f4a877efd966743983cd8453",
+                "sha256:792b1205475c98344788c585bc459615aaa961490f24f0f3e9f650d5890d1ba0",
+                "sha256:de35da7503fe7359d07f0897be606a49218ddfa3361a1c297b153fce61d5adaf",
+                "sha256:b78622238114033dee7c00c6ce45fa55ad0803c14fd6e77a6128a226ab4fbab6"
             ]
         },
         "Metadata": {
-            "LastTagTime": "2026-02-08T00:57:15.012977232Z"
+            "LastTagTime": "2026-02-15T00:49:44.040098227Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:5f9bb2441fcec9feb6b1af29d0eb2dda51fec4f5f799474e7ff6dcdc2dcc15f8",
+            "size": 856
         }
     }
 ]
